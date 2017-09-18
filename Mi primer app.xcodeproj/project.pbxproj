@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		9AA3FEF01F6F4B0800A8ADF0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AA3FEEF1F6F4B0800A8ADF0 /* main.m */; };
 		9AA3FEF31F6F4B0800A8ADF0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AA3FEF21F6F4B0800A8ADF0 /* AppDelegate.m */; };
-		9AA3FEF61F6F4B0800A8ADF0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AA3FEF51F6F4B0800A8ADF0 /* ViewController.m */; };
+		9AA3FEF61F6F4B0800A8ADF0 /* Home.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AA3FEF51F6F4B0800A8ADF0 /* Home.m */; };
 		9AA3FEF91F6F4B0800A8ADF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AA3FEF71F6F4B0800A8ADF0 /* Main.storyboard */; };
 		9AA3FEFC1F6F4B0800A8ADF0 /* Mi_primer_app.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9AA3FEFA1F6F4B0800A8ADF0 /* Mi_primer_app.xcdatamodeld */; };
 		9AA3FEFE1F6F4B0800A8ADF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AA3FEFD1F6F4B0800A8ADF0 /* Assets.xcassets */; };
@@ -21,8 +21,8 @@
 		9AA3FEEF1F6F4B0800A8ADF0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9AA3FEF11F6F4B0800A8ADF0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9AA3FEF21F6F4B0800A8ADF0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		9AA3FEF41F6F4B0800A8ADF0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		9AA3FEF51F6F4B0800A8ADF0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9AA3FEF41F6F4B0800A8ADF0 /* Home.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Home.h; sourceTree = "<group>"; };
+		9AA3FEF51F6F4B0800A8ADF0 /* Home.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Home.m; sourceTree = "<group>"; };
 		9AA3FEF81F6F4B0800A8ADF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9AA3FEFB1F6F4B0800A8ADF0 /* Mi_primer_app.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Mi_primer_app.xcdatamodel; sourceTree = "<group>"; };
 		9AA3FEFD1F6F4B0800A8ADF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -60,10 +60,8 @@
 		9AA3FEED1F6F4B0800A8ADF0 /* Mi primer app */ = {
 			isa = PBXGroup;
 			children = (
-				9AA3FEF11F6F4B0800A8ADF0 /* AppDelegate.h */,
-				9AA3FEF21F6F4B0800A8ADF0 /* AppDelegate.m */,
-				9AA3FEF41F6F4B0800A8ADF0 /* ViewController.h */,
-				9AA3FEF51F6F4B0800A8ADF0 /* ViewController.m */,
+				9AA3FF081F6F4B1300A8ADF0 /* Main */,
+				9AA3FF091F6F4B2D00A8ADF0 /* Controllers */,
 				9AA3FEF71F6F4B0800A8ADF0 /* Main.storyboard */,
 				9AA3FEFD1F6F4B0800A8ADF0 /* Assets.xcassets */,
 				9AA3FEFF1F6F4B0800A8ADF0 /* LaunchScreen.storyboard */,
@@ -80,6 +78,24 @@
 				9AA3FEEF1F6F4B0800A8ADF0 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9AA3FF081F6F4B1300A8ADF0 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				9AA3FEF11F6F4B0800A8ADF0 /* AppDelegate.h */,
+				9AA3FEF21F6F4B0800A8ADF0 /* AppDelegate.m */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		9AA3FF091F6F4B2D00A8ADF0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9AA3FEF41F6F4B0800A8ADF0 /* Home.h */,
+				9AA3FEF51F6F4B0800A8ADF0 /* Home.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,7 +169,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9AA3FEF61F6F4B0800A8ADF0 /* ViewController.m in Sources */,
+				9AA3FEF61F6F4B0800A8ADF0 /* Home.m in Sources */,
 				9AA3FEF31F6F4B0800A8ADF0 /* AppDelegate.m in Sources */,
 				9AA3FEFC1F6F4B0800A8ADF0 /* Mi_primer_app.xcdatamodeld in Sources */,
 				9AA3FEF01F6F4B0800A8ADF0 /* main.m in Sources */,
